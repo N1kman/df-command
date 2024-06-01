@@ -1,10 +1,10 @@
 from typing import Dict, List
 import subprocess
 
-from .executor_base import ExecutorBase
+from .executer_base import ExecuterBase
 
 
-class DFExecutor(ExecutorBase):
+class DFExecuter(ExecuterBase):
 
     DF_OPTION = ['df']
 

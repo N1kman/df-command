@@ -2,7 +2,7 @@ import abc
 import argparse
 import json
 
-from df_utility import DFParser, DFHumanParser, DFInodeParser, DFExecutor, DFHumanExecutor, DFInodeExecutor
+from df_utility import DFParser, DFHumanParser, DFInodeParser, DFExecuter, DFHumanExecuter, DFInodeExecuter
 
 
 def get_args():
@@ -15,11 +15,11 @@ def get_args():
 
 def get_executor_by_arg(args):
     if args.human:
-        return DFHumanExecutor(DFHumanParser())
+        return DFHumanExecuter(DFHumanParser())
     elif args.inode:
-        return DFInodeExecutor(DFInodeParser())
+        return DFInodeExecuter(DFInodeParser())
     else:
-        return DFExecutor(DFParser())
+        return DFExecuter(DFParser())
 
 
 def main() -> None:

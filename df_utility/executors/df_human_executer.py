@@ -1,7 +1,7 @@
-from .df_executor import DFExecutor
+from .df_executer import DFExecuter
 
 
-class DFHumanExecutor(DFExecutor):
+class DFHumanExecuter(DFExecuter):
 
     DF_HUMAN_OPTION = ['df', '-h']
 

@@ -1,7 +1,7 @@
-from .df_executor import DFExecutor
+from .df_executer import DFExecuter
 
 
-class DFInodeExecutor(DFExecutor):
+class DFInodeExecuter(DFExecuter):
 
     DF_INODE_OPTION = ['df', '-i']
 
